@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Great+Vibes&family=Cinzel:wght@400;500;600&display=swap");
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
@@ -59,29 +60,45 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --font-script: "Great Vibes", cursive;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-display: "Cinzel", serif;
 }
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
+  /* Wedding palette: cream parchment, deep maroon, royal teal, rich gold */
+  --background: oklch(0.96 0.025 85);
+  --foreground: oklch(0.28 0.08 35);
+  --card: oklch(0.98 0.018 85);
+  --card-foreground: oklch(0.28 0.08 35);
+  --popover: oklch(0.98 0.018 85);
+  --popover-foreground: oklch(0.28 0.08 35);
+  --primary: oklch(0.35 0.12 30);
+  --primary-foreground: oklch(0.96 0.025 85);
+  --secondary: oklch(0.55 0.13 195);
+  --secondary-foreground: oklch(0.96 0.025 85);
+  --muted: oklch(0.92 0.03 85);
+  --muted-foreground: oklch(0.45 0.06 40);
+  --accent: oklch(0.72 0.14 75);
+  --accent-foreground: oklch(0.25 0.08 35);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --border: oklch(0.78 0.08 75);
+  --input: oklch(0.88 0.04 75);
+  --ring: oklch(0.72 0.14 75);
+  --gold: oklch(0.72 0.14 75);
+  --gold-deep: oklch(0.55 0.14 65);
+  --maroon: oklch(0.35 0.12 30);
+  --peacock: oklch(0.45 0.13 200);
+  --peacock-deep: oklch(0.32 0.12 230);
+  --emerald: oklch(0.5 0.12 165);
+  --parchment: oklch(0.96 0.025 85);
+  --gradient-gold: linear-gradient(135deg, oklch(0.78 0.14 80), oklch(0.55 0.14 55));
+  --gradient-parchment: radial-gradient(ellipse at center, oklch(0.97 0.022 85), oklch(0.92 0.04 75));
+  --gradient-peacock: linear-gradient(135deg, oklch(0.32 0.12 230), oklch(0.5 0.12 165));
+  --shadow-elegant: 0 20px 60px -20px oklch(0.35 0.12 30 / 0.25);
+  --shadow-gold: 0 0 40px oklch(0.72 0.14 75 / 0.4);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -140,5 +157,57 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-serif);
+    background-image:
+      radial-gradient(ellipse at top left, oklch(0.72 0.14 75 / 0.08), transparent 60%),
+      radial-gradient(ellipse at bottom right, oklch(0.45 0.13 200 / 0.06), transparent 60%);
+    background-attachment: fixed;
   }
 }
+
+@layer utilities {
+  .font-script { font-family: var(--font-script); }
+  .font-serif-wedding { font-family: var(--font-serif); }
+  .font-display { font-family: var(--font-display); letter-spacing: 0.08em; }
+  .text-gold { color: var(--gold-deep); }
+  .text-maroon { color: var(--maroon); }
+  .text-peacock { color: var(--peacock-deep); }
+  .bg-gradient-gold {
+    background: var(--gradient-gold);
+  }
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-gradient-peacock {
+    background: var(--gradient-peacock);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .shadow-elegant { box-shadow: var(--shadow-elegant); }
+  .shadow-gold { box-shadow: var(--shadow-gold); }
+  .border-gold { border-color: var(--gold); }
+  .ornate-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes shimmer {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-float-slow { animation: float-slow 6s ease-in-out infinite; }
+.animate-shimmer { animation: shimmer 3s ease-in-out infinite; }
+.animate-fade-up { animation: fade-up 0.8s ease-out both; }
