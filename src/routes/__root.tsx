@@ -32,11 +32,15 @@ export const Route = createRootRoute({
       { title: "Vimal & Gopika — Wedding Invitation · 3 May 2026" },
       { name: "description", content: "Join us as Vimal C V & Gopika G begin their journey together on 3rd May 2026 at S. N. Auditorium, Palluruthy." },
       { name: "author", content: "Vimal & Gopika" },
-      { property: "og:title", content: "Vimal weds Gopika · 3 May 2026" },
-      { property: "og:description", content: "With family blessings, we cordially invite you to celebrate our wedding at S. N. Auditorium, Palluruthy." },
+      { property: "og:title", content: "Vimal & Gopika — Wedding Invitation · 3 May 2026" },
+      { property: "og:description", content: "Join us as Vimal C V & Gopika G begin their journey together on 3rd May 2026 at S. N. Auditorium, Palluruthy." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Vimal & Gopika — Wedding Invitation · 3 May 2026" },
+      { name: "twitter:description", content: "Join us as Vimal C V & Gopika G begin their journey together on 3rd May 2026 at S. N. Auditorium, Palluruthy." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ee9e8ba4-31a6-4f35-90d1-41409857300f/id-preview-4487529e--6f4af130-fd41-4714-acb6-c3c5ce3def11.lovable.app-1777058655562.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ee9e8ba4-31a6-4f35-90d1-41409857300f/id-preview-4487529e--6f4af130-fd41-4714-acb6-c3c5ce3def11.lovable.app-1777058655562.png" },
     ],
     links: [
       {
