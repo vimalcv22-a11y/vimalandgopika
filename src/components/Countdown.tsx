@@ -18,15 +18,19 @@ function calc(target: Date) {
 
 export function Countdown({ target }: CountdownProps) {
   const targetDate = new Date(target);
-  const [time, setTime] = useState(() => calc(targetDate));
+  // Start with zeros to keep SSR and first client render identical, then update on mount.
+  const [time, setTime] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0, done: false });
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
+    setTime(calc(targetDate));
     const id = setInterval(() => setTime(calc(targetDate)), 1000);
     return () => clearInterval(id);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [target]);
 
-  if (time.done) {
+  if (mounted && time.done) {
     return (
       <p className="font-script text-4xl text-gradient-gold">The day is here ✦</p>
     );
