@@ -1,9 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Calendar, Clock, MapPin, Heart } from "lucide-react";
 import { Countdown } from "@/components/Countdown";
-import peacockHero from "@/assets/peacock-hero.jpg";
 import mandala from "@/assets/mandala-ornament.png";
 import temple from "@/assets/temple-venue.jpg";
+import coupleSilhouette from "@/assets/couple-silhouette.jpg";
 
 const WEDDING_DATE = "2026-05-03T11:56:00+05:30";
 
@@ -39,8 +39,25 @@ function Index() {
         style={{ animationDelay: "2s" }}
       />
 
-      {/* HERO */}
-      <section className="relative mx-auto max-w-4xl px-6 pt-16 pb-12 text-center">
+      {/* HERO with couple silhouette background */}
+      <section className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 py-16 overflow-hidden">
+        {/* Background image */}
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${coupleSilhouette})` }}
+        />
+        {/* Parchment-tinted overlay for readability */}
+        <div
+          aria-hidden
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(180deg, oklch(0.96 0.025 85 / 0.85) 0%, oklch(0.96 0.025 85 / 0.55) 40%, oklch(0.96 0.025 85 / 0.85) 100%)",
+          }}
+        />
+
+        <div className="relative z-10 mx-auto max-w-4xl">
         <p className="font-display text-xs tracking-[0.4em] text-gold animate-shimmer">
           ॥ ॐ श्री गणेशाय नमः ॥
         </p>
@@ -66,18 +83,8 @@ function Index() {
         <p className="mt-8 font-display text-sm tracking-[0.3em] text-maroon animate-fade-up" style={{ animationDelay: "0.4s" }}>
           3 · MAY · 2026
         </p>
+        </div>
       </section>
-
-      {/* Peacock illustration */}
-      <div className="relative mx-auto max-w-3xl px-6">
-        <img
-          src={peacockHero}
-          alt="Ornate peacock illustration"
-          width={1536}
-          height={1024}
-          className="mx-auto w-full rounded-2xl shadow-elegant border border-gold/40"
-        />
-      </div>
 
       {/* COUNTDOWN */}
       <section className="relative mx-auto max-w-3xl px-6 py-20 text-center">
