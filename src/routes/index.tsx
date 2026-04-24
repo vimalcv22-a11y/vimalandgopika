@@ -51,13 +51,13 @@ function Index() {
           Together with their families
         </p>
 
-        <h1 className="mt-6 font-script text-7xl sm:text-8xl md:text-9xl text-gradient-peacock leading-none animate-fade-up" style={{ animationDelay: "0.1s" }}>
+        <h1 className="mt-6 font-script text-7xl sm:text-8xl md:text-9xl text-gradient-peacock leading-[1.4] py-2 animate-fade-up" style={{ animationDelay: "0.1s" }}>
           Vimal
         </h1>
         <p className="my-4 font-script text-3xl text-gold animate-fade-up" style={{ animationDelay: "0.2s" }}>
           weds
         </p>
-        <h1 className="font-script text-7xl sm:text-8xl md:text-9xl text-gradient-peacock leading-none animate-fade-up" style={{ animationDelay: "0.3s" }}>
+        <h1 className="font-script text-7xl sm:text-8xl md:text-9xl text-gradient-peacock leading-[1.4] py-2 animate-fade-up" style={{ animationDelay: "0.3s" }}>
           Gopika
         </h1>
 
@@ -105,9 +105,9 @@ function Index() {
               with family on the auspicious occasion of the marriage of our son
             </p>
 
-            <h3 className="mt-8 font-script text-6xl sm:text-7xl text-gradient-peacock">Vimal C V</h3>
+            <h3 className="mt-8 font-script text-6xl sm:text-7xl text-gradient-peacock leading-[1.4] py-2">Vimal C V</h3>
             <p className="my-3 font-serif-wedding italic text-xl text-gold">with</p>
-            <h3 className="font-script text-6xl sm:text-7xl text-gradient-peacock">Gopika G</h3>
+            <h3 className="font-script text-6xl sm:text-7xl text-gradient-peacock leading-[1.4] py-2">Gopika G</h3>
 
             <p className="mt-8 font-script text-2xl text-maroon">
               D/o. Late Gopakumar T. M &amp; Late Bindu T. R
@@ -125,7 +125,7 @@ function Index() {
               <Calendar className="h-7 w-7 text-gold mb-3" />
               <p className="font-display text-xs tracking-[0.2em] text-muted-foreground">DATE</p>
               <p className="mt-2 font-display text-sm text-maroon">2026 MAY</p>
-              <p className="font-script text-5xl text-gradient-gold leading-none">3</p>
+              <p className="font-script text-5xl text-gradient-gold leading-[1.3] py-1">3</p>
               <p className="font-display text-xs tracking-[0.2em] text-maroon">SUNDAY</p>
             </div>
 
