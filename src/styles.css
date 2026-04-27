@@ -200,6 +200,14 @@
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
 }
+@keyframes float-name {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+@keyframes float-name-delayed {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
 @keyframes shimmer {
   0%, 100% { opacity: 0.7; }
   50% { opacity: 1; }
@@ -209,5 +217,7 @@
   to { opacity: 1; transform: translateY(0); }
 }
 .animate-float-slow { animation: float-slow 6s ease-in-out infinite; }
+.animate-float-name { animation: float-name 4s ease-in-out infinite; }
+.animate-float-name-delayed { animation: float-name-delayed 4s ease-in-out infinite; animation-delay: 2s; }
 .animate-shimmer { animation: shimmer 3s ease-in-out infinite; }
 .animate-fade-up { animation: fade-up 0.8s ease-out both; }
