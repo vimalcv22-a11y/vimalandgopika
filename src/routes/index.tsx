@@ -89,7 +89,7 @@ function Index() {
       {/* COUNTDOWN */}
       <section className="relative mx-auto max-w-3xl px-6 py-20 text-center">
         <p className="font-display text-xs tracking-[0.4em] text-gold uppercase">Counting the moments</p>
-        <h2 className="mt-4 font-script text-5xl sm:text-6xl text-gradient-gold">until we say I do</h2>
+        <h2 className="mt-4 font-script text-5xl sm:text-6xl text-gradient-gold">until we tie the knot</h2>
         <Ornament className="mt-6 mb-10" />
         <Countdown target={WEDDING_DATE} />
       </section>
@@ -172,12 +172,6 @@ function Index() {
       {/* RSVP / Closing */}
       <section className="relative mx-auto max-w-2xl px-6 py-20 text-center">
         <Ornament />
-        <p className="mt-8 font-serif-wedding italic text-xl text-foreground/80 leading-relaxed">
-          “And ever has it been known that love knows not its own depth
-          until the hour of separation.”
-        </p>
-        <p className="mt-4 font-display text-xs tracking-[0.3em] text-gold">— KAHLIL GIBRAN</p>
-
         <a
           href="https://maps.google.com/?q=S.N.+Auditorium+Palluruthy"
           target="_blank"
