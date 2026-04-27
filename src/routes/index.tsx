@@ -68,13 +68,13 @@ function Index() {
           Together with their families
         </p>
 
-        <h1 className="mt-6 font-script text-7xl sm:text-8xl md:text-9xl text-gradient-peacock leading-[1.4] py-2 animate-float-name">
+        <h1 className="mt-6 font-script text-7xl sm:text-8xl md:text-9xl text-gradient-peacock leading-[1.6] pb-6 pt-4 px-4 overflow-visible animate-float-name">
           Vimal
         </h1>
         <p className="my-4 font-script text-3xl text-gold animate-fade-up" style={{ animationDelay: "0.2s" }}>
           weds
         </p>
-        <h1 className="font-script text-7xl sm:text-8xl md:text-9xl text-gradient-peacock leading-[1.4] py-2 animate-float-name-delayed">
+        <h1 className="font-script text-7xl sm:text-8xl md:text-9xl text-gradient-peacock leading-[1.6] pb-6 pt-4 px-4 overflow-visible animate-float-name-delayed">
           Gopika
         </h1>
 
