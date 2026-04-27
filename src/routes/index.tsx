@@ -172,6 +172,12 @@ function Index() {
       {/* RSVP / Closing */}
       <section className="relative mx-auto max-w-2xl px-6 py-20 text-center">
         <Ornament />
+        <p className="mt-8 font-serif-wedding italic text-xl text-foreground/80 leading-relaxed">
+          “And ever has it been known that love knows not its own depth
+          until the hour of separation.”
+        </p>
+        <p className="mt-4 font-display text-xs tracking-[0.3em] text-gold">— KAHLIL GIBRAN</p>
+
         <a
           href="https://maps.google.com/?q=S.N.+Auditorium+Palluruthy"
           target="_blank"
